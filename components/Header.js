@@ -44,10 +44,16 @@ function Header(){
                 {/*Right*/}
                 {/*All these icons*/}
                 <div className="flex items-center justify-end space-x-4">
-
                     <HomeIcon className="navBtn"/>
+                    <div className="relative navBtn">
+                        <PaperAirplaneIcon className="navBtn rotate-45"/>
+                        <div className="absolute -top-2 -right-3 text-xs w-5 bg-red-500 rounded-full flex
+                         items-center justify-center animate-pulse text-white">3</div>
+                    </div>
+
+
                     <MenuIcon className="h-6 md:hidden cursor-pointer"/>
-                    <PaperAirplaneIcon className="navBtn"/>
+
                     <PlusCircleIcon className="navBtn"/>
                     <UserGroupIcon className="navBtn"/>
                     <HeartIcon className="navBtn"/>
