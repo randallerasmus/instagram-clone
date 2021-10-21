@@ -32,7 +32,8 @@ function Header(){
                     </div>
 
                     <input className="bg-gray-50 block w-full pl-10 sm:text-sm
-                           border-gray focus:ring-black focus:border-black"
+                           border-gray-300 focus:ring-black focus:border-black
+                           rounded-md"
                            type="text"
                            placeholder="Search"/>
                 </div>
