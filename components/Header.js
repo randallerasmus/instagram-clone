@@ -1,4 +1,12 @@
 import Image from "next/image";
+import {
+    SearchIcon,
+    PlusCircleIcon,
+    UserGroupIcon,
+    HeartIcon,
+    PaperAirplaneIcon,
+    MenuIcon,
+} from "@heroicons/react/outline";
 
 function Header(){
     return (
@@ -16,7 +24,14 @@ function Header(){
 
                 </div>
 
-                {/*Middle*/}
+                {/*Middle - Search input field*/}
+                <div>
+                    <div>
+                        <SearchIcon className="h-5 w-5 text-gray-500"/>
+                    </div>
+
+                    <input type="text" placeholder="Search"/>
+                </div>
 
                 {/*Right*/}
             </div>
