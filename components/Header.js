@@ -12,7 +12,8 @@ import {HomeIcon} from "@heroicons/react/solid";
 
 function Header(){
     return (
-        <div>
+            // Adding a Nice and Sticky Header
+        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
                 {/*left*/}
                 <div className='relative hidden lg:inline-grid w-24 cursor-pointer'>
