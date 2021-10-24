@@ -1,5 +1,5 @@
 
-function Story(img,username){
+function Story({img,username}){
     return (
         <div>
             <img src={img} alt="" />
