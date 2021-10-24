@@ -5,7 +5,7 @@ import Feed from "../components/Feed";
 export default function Home() {
   return (
       // this is the reason why it is centered and the height is adjusted perfectly
-    <div className="">
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide" >
       <Head>
         <title>Instagram </title>
         <link rel="icon" href="/favicon.ico" />
