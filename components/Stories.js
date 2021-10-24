@@ -1,7 +1,11 @@
 import faker from "faker"
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import Story from "./Story";
+
 
 function Stories(){
+
+    const [suggestions,setSuggestions] = useState([]);
 
     // What the stories does?
     //     1. renders out a list of stories
@@ -17,20 +21,28 @@ function Stories(){
             ...faker.helpers.contextualCard(),
             id: i,
             }));
-        console.log(suggestions);
+
+        setSuggestions(suggestions);
     },  []);
 
-    return <div>
+    return (
+    <div>
         {/*So now here we will add loads of stoies*/}
 
+                {suggestions.map((profile) => (
+                    <Story
+                        key={profile.id}
+                        img={profile.avatar}
+                        username={profile.username}
+                    />
+                ))}
         {/*Stories*/}
         {/*Stories*/}
         {/*Stories*/}
         {/*Stories*/}
         {/*Stories*/}
         {/*Stories*/}
-
-    </div>;
-
+    </div>
+    );
 }
 export default Stories;
