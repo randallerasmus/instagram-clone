@@ -16,7 +16,7 @@ function Post(id,username,userImg, img,caption){
 
             {/*Header*/}
             <div>
-                <img src="" alt="" />
+                <img src="" alt="this is the source" />
                 <p>{username}</p>
                 <DotsHorizontalIcon className="h-5"/>
             </div>
